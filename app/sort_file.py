@@ -2,6 +2,9 @@
 import pandas as pd
 import sys
 
+if len(sys.argv) < 4:
+    print("Usage: sort_file.py inputfname output sortby")
+    sys.exit()
 infname=sys.argv[1]
 outfname=sys.argv[2]
 sortby=sys.argv[3]
